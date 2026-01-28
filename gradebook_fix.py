@@ -1,6 +1,6 @@
 def main():
     # Ask how many students are in the class
-    student_count = input("How many students to enter? ")
+    student_count = int(input("How many students to enter? "))
 
     # Lists to store data
     names = []
@@ -19,7 +19,7 @@ def main():
             score_input = input("Score: ")
             
             # Check for valid range
-            if score_input < 0 or score_input > 100:
+            if score_input =< 0 or score_input => 100:
                 print("Invalid score. Must be 0-100.")
                 continue
             else:
@@ -41,4 +41,4 @@ def main():
         print(f"{i + 1}: {names[i]} - {scores[i]} ({result})")
 
 # Call the main function
-main
+main()

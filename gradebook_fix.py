@@ -8,7 +8,7 @@ def main():
 
     # Loop to get student details
     for i in range(student_count):
-        print("Student " + i + 1)
+        print("Student ",i + 1)
         
         # Clean up the name input
         name_input = input("Name: ").strip.title()
@@ -19,7 +19,7 @@ def main():
             score_input = input("Score: ")
             
             # Check for valid range
-            if score_input =< 0 or score_input => 100:
+            if score_input <= 0 or score_input >= 100:
                 print("Invalid score. Must be 0-100.")
                 continue
             else:
